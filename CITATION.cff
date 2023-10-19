@@ -1,0 +1,13 @@
+cff-version: 0.1.0
+message: If you use this database, please cite it as below.
+authors:
+  - family-names: Stephenson
+    given-names: Simon
+  - family-names: Hoggard
+    given-names: Mark
+  - family-names: Holdt
+    given-names: Megan
+title: SeisCRUST
+version: v0.1.0-alpha
+doi: https://doi.org/10.5281/zenodo.10017429
+date-released: 2023-10-18
