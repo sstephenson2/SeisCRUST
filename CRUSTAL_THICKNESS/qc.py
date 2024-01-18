@@ -44,3 +44,4 @@ print(f"\n dropping {n_duplicates} duplicated entries")
 crust_df_Na_corrected_no_duplicates = crust_df_Na_corrected.drop_duplicates().replace('-', np.nan)
 
 
+crust_df_Na_corrected_no_duplicates.to_csv("seisCRUST_thickness_QC.csv", index=False)
