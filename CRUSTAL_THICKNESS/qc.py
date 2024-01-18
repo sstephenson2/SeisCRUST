@@ -41,7 +41,6 @@ crust_df_Na_corrected = pd.concat([lon_Na_corrected,
 n_duplicates = crust_df_Na_corrected.duplicated().sum()
 print(f"\n dropping {n_duplicates} duplicated entries")
 
-crust_df_Na_corrected_no_duplicates = crust_df_Na_corrected.drop_duplicates()
+crust_df_Na_corrected_no_duplicates = crust_df_Na_corrected.drop_duplicates().replace('-', np.nan)
 
-# Using fuzzzy comparison remove any remaining potential duplicates
 
