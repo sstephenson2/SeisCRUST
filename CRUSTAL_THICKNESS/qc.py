@@ -39,9 +39,14 @@ crust_df_Na_corrected = pd.concat([lon_Na_corrected,
 # check for duplicates.  Note that this may remove a very small number of
 #    data where there is truly a duplicated measurement.
 n_duplicates = crust_df_Na_corrected.duplicated().sum()
-print(f"\n dropping {n_duplicates} duplicated entries")
+print(f"\n dropping {n_duplicates} duplicated entries \n")
 
 crust_df_Na_corrected_no_duplicates = crust_df_Na_corrected.drop_duplicates().replace('-', np.nan)
 
+print(f"database has {len(crust_df_Na_corrected_no_duplicates)} entries \n")
 
-crust_df_Na_corrected_no_duplicates.to_csv("seisCRUST_thickness_QC.csv", index=False)
+sns.scatterplot(data=crust_df_Na_corrected_no_duplicates, x="MOHO_DEPTH", y="VP/VS")
+plt.show()
+
+
+crust_df_Na_corrected_no_duplicates.to_csv("seisCRUST_thickness_QC.csv", index=False, na_rep="-")
