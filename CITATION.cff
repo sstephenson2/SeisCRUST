@@ -1,4 +1,4 @@
-cff-version: 0.1.0
+cff-version: 1.0.0
 message: If you use this database, please cite it as below.
 authors:
   - family-names: Stephenson
@@ -7,7 +7,12 @@ authors:
     given-names: Mark
   - family-names: Holdt
     given-names: Megan
+  - family-names: Galbraith-Olive
+    given-names: Hannah
 title: SeisCRUST
-version: v0.1.0-alpha
+version: v1.0.0
 doi: https://doi.org/10.5281/zenodo.10017429
-date-released: 2023-10-18
+date-released: 2024-02-01
+abstract: A database of global estimates of crustal thickness and 
+  1D seismic velocity structure from seismic refraction, reflection 
+  and receiver function studies.
