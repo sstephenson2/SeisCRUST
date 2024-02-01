@@ -8,6 +8,8 @@ function analyses.
 
 For a detailed description of the contents of this database please refer to Stephenson et al. (2024).
 
+To contribute data, bug fixes or any other changes, plese see the ***Contributions*** section below.
+
 ## Contents
 
 - `CRUSTAL_THICKNESS/`: This directory contains data files related to crustal thickness.
@@ -75,9 +77,24 @@ Please see the documentation in SMV2rho and in Stephenson et al. (2024) for furt
 
 ## Contributing
 
-If you would like to contribute to this database, please contact the authors.  We welcome contributions
-to `SeisCruST` and would be delighted if you choose to upload your spot measurements and 1D velocity
-profiles!
+If you would like to contribute to this database, please contact the authors. We welcome contributions to `SeisCruST` and would be delighted if you choose to upload your spot crustal thickness measurements and 1D 
+velocity profiles!
+
+If you're ready to contribute, here's how you can do it:
+
+1. **Fork the repository**: Click the 'Fork' button at the top right of this page and clone your forked repository to your local machine.
+
+2. **Create a new branch**: From your terminal, create a new branch for the data addition, bug fix or feature you want to work on. You can create a new branch with `git checkout -b branch-name`.
+
+3. **Make your changes**: Make the changes you want to contribute. Whether it is adding new data, fixing a bug, improving documentation, or adding a new feature, we really appreciate feedback, new data and improvements!
+
+4. **Commit your changes**: Once you're done, commit your changes with `git commit -m "Your detailed commit message"`.  Please add as much information as possible to your commit messages.
+
+5. **Push your changes**: Push your changes to your forked repository with `git push origin branch-name`.
+
+6. **Create a pull request**: Go to your forked repository on GitHub and click the 'New pull request' button. Fill out the form and then submit the pull request.
+
+We will take a look at your pull request as soon as we can!
 
 ## License
 
