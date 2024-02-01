@@ -8,7 +8,7 @@ function analyses.
 
 For a detailed description of the contents of this database please refer to Stephenson et al. (2024).
 
-To contribute data, bug fixes or any other changes, plese see the ***Contributions*** section below.
+To contribute data, bug fixes or any other changes, plese see the ***Contributing*** section below.
 
 ## Contents
 
@@ -66,7 +66,8 @@ We do not include all data from the USGS GSC database and encourage users to exp
 Simply download the database!
 
 We request that users reference this database and the primary authors of the studies whose data is used.
-Users are welcome to add to the database so long as the database and primary sources are referenced as well.
+Users are welcome to add to the database so long as the database and primary sources are referenced as well.  
+If you add to the database, we would reccommend that you consider contributing your data to the respository!  See ***Contributing*** below for more information.
 
 Data derived from the Global Seismic Catalog of the United States Geological Survey used in this database
 is accompanied by the reference code provided in the original database.  Please refer to ([Mooney et al., 2023](https://www.sciencedirect.com/science/article/pii/S0012825223001824)) for further details.
