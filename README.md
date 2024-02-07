@@ -38,18 +38,27 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
 
 - `CRUSTAL_STRUCTURE/`: This directory contains data related to crustal structure, organized by geographic region and method. Each region directory contains various files and further subdirectories as follows:
 
-    - CRUSTAL_STRUCTURE
-        - ARABIA
-        - Vp
-          - RECEIVER_FUNCTION
-            - CALCULATED_brocher
-        - Vs
-          - RECEIVER_FUNCTION
-            - DATA
-        - vs_rho_brocher
-          - RECEIVER_FUNCTION
-        - vs_rho_stephenson_T_DEPENDENT
-          - RECEIVER_FUNCTION
+        ```
+        CRUSTAL_STRUCTURE
+        ├── ARABIA
+        │   ├── Vp
+        │   │   └── RECEIVER_FUNCTION
+        │   │       └── CALCULATED_brocher
+        │   ├── Vs
+        │   │   └── RECEIVER_FUNCTION
+        │   │       └── DATA
+        │   ├── vs_rho_brocher
+        │   │   └── RECEIVER_FUNCTION
+        │   └── vs_rho_stephenson_T_DEPENDENT
+        │       └── RECEIVER_FUNCTION
+        ├── EUROPE
+        ├── HUDSON_BAY
+        ├── IRAN
+        ├── N_AFRICA
+        ├── SE_ASIA
+        ├── S_AMERICA
+        └── USGS_GSC
+        ```
 
   - `ARABIA/`, `EUROPE/`, `HUDSON_BAY/`, `IRAN/`, `N_AFRICA/`, `SE_ASIA/`, `S_AMERICA/`, `USGS_GSC/`, ... : Each of these directories represents a specific geographic region.  The `USGS_GSC` directory contains velocity profiles derived from the United States Geological Survey Global Seismic Catalog (USGS GSC) Inside each region directory, you will find:
 
