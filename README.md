@@ -78,8 +78,7 @@ Please see the documentation in SMV2rho and in Stephenson et al. (2024) for furt
 
 ## Contributing
 
-If you would like to contribute to this database, please contact the authors. We welcome contributions to `SeisCruST` and would be delighted if you choose to upload your spot crustal thickness measurements and 1D 
-velocity profiles!
+If you would like to contribute to this database, please contact the authors. We welcome contributions to `SeisCruST` and would be delighted if you choose to upload your spot crustal thickness measurements and 1D velocity profiles!
 
 If you're ready to contribute, here's how you can do it:
 
