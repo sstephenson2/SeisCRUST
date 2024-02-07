@@ -30,6 +30,7 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
 
   - `QC.py`: A skeleton python3 program for checking for basic quality issues in the
                the database.
+  - `EARS.csv`:  [Global Earthscope Automated Receiver Survey](http://ds.iris.edu/dms/products/ears/) database.  Note this data is not used in Stephenson _et al._ (2024) but is provided here for completeness.  Data was accessed in June 2022.
 
 - `CRUSTAL_STRUCTURE/`: This directory contains data related to crustal structure, organized by geographic region and method. Each region directory contains various files and further subdirectories as follows:
 
