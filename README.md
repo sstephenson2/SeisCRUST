@@ -38,9 +38,22 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
 
 - `CRUSTAL_STRUCTURE/`: This directory contains data related to crustal structure, organized by geographic region and method. Each region directory contains various files and further subdirectories as follows:
 
+    - CRUSTAL_STRUCTURE
+        - ARABIA
+        - Vp
+          - RECEIVER_FUNCTION
+            - CALCULATED_brocher
+        - Vs
+          - RECEIVER_FUNCTION
+            - DATA
+        - vs_rho_brocher
+          - RECEIVER_FUNCTION
+        - vs_rho_stephenson_T_DEPENDENT
+          - RECEIVER_FUNCTION
+
   - `ARABIA/`, `EUROPE/`, `HUDSON_BAY/`, `IRAN/`, `N_AFRICA/`, `SE_ASIA/`, `S_AMERICA/`, `USGS_GSC/`, ... : Each of these directories represents a specific geographic region.  The `USGS_GSC` directory contains velocity profiles derived from the United States Geological Survey Global Seismic Catalog (USGS GSC) Inside each region directory, you will find:
 
-    - `Vs`, `vs_rho_stephenson`, `vs_rho_stephenson_T_DEPENDENT`, `vs_rho_brocher`, `Vp`, `vp_rho_stephenson`, `vp_rho_brocher`, `vp_rho_stephenson_T_DEPENDENT`... : These files contain various data related to seismic velocities and converted densities.  Please see Stephenson et al. (2024) and [SMV2rho](https://github.com/sstephenson2/SMV2rho) for details on the methods used to convert to density.  Inside these directories you will find the method name of the seismic approach used to estimate the velocity structure:
+    - `Vs`, `vs_rho_stephenson`, `vs_rho_stephenson_T_DEPENDENT`, `vs_rho_brocher`, `Vp`, `vp_rho_stephenson`, `vp_rho_brocher`, `vp_rho_stephenson_T_DEPENDENT`... : These files contain various data related to seismic velocities and converted densities.  Please see Stephenson et al. (2024) and [SMV2rho](https://github.com/sstephenson2/SMV2rho) for details on the methods used to convert to density.  Inside these directories you will find the method name of the seismic approach used to estimate the velocity structure.
 
     - `RECEIVER_FUNCTION/`, `REVERSED_REFRACTION/`... : These directories represent the method used to obtain the data. Inside each method directory, there is a `DATA/` directory which contains the actual data files (.dat suffix). The structure of these data files is as follows:
 
@@ -56,6 +69,8 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
       ```
 
       Where `profile_name` is the name of the seismic profile, `lon` and `lat` are the longitude and latitude of the profile, `moho_depth` is the depth of the Moho discontinuity, and `vs1`, `vs2`, `-z1`, `-z2` are the seismic velocities and depths at various points.
+
+      There may also be a `CALCULATED_brocher` directory within the `Vp` directory.  This directory contains profiles where `Vp` has been calcualted from the `Vs` profile using [Brocher's (2005)](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/95/6/2081/146858/Empirical-Relations-between-Elastic-Wavespeeds-and) approach.
 
 #### Bulk crustal property files
 
