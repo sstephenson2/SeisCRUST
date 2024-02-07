@@ -6,11 +6,13 @@ This repository contains continental crustal thickness and seismic velocity esti
 controlled source seismic refraction (wide-angle) and reflection profiles, and passive source receiver 
 function analyses.
 
-For a detailed description of the contents of this database please refer to Stephenson et al. (2024).
+For a detailed description of the contents of this database please refer to Stephenson _et al._ (2024).
 
 To contribute data, bug fixes or any other changes, plese see the ***Contributing*** section below.
 
 ## Contents
+
+#### Crustal thickness files
 
 - `CRUSTAL_THICKNESS/`: This directory contains data files related to crustal thickness.
   - `seisCRUST.csv`: Crustal thickness data table. The structure of the file is as follows:
@@ -31,6 +33,8 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
   - `QC.py`: A skeleton python3 program for checking for basic quality issues in the
                the database.
   - `EARS.csv`:  [Global Earthscope Automated Receiver Survey](http://ds.iris.edu/dms/products/ears/) database.  Note this data is not used in Stephenson _et al._ (2024) but is provided here for completeness.  Data was accessed in June 2022.
+
+#### Crustal velocity and density files
 
 - `CRUSTAL_STRUCTURE/`: This directory contains data related to crustal structure, organized by geographic region and method. Each region directory contains various files and further subdirectories as follows:
 
@@ -53,12 +57,14 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
 
       Where `profile_name` is the name of the seismic profile, `lon` and `lat` are the longitude and latitude of the profile, `moho_depth` is the depth of the Moho discontinuity, and `vs1`, `vs2`, `-z1`, `-z2` are the seismic velocities and depths at various points.
 
+#### Bulk crustal property files
+
 - `BULK_CRUSTAL_PROPERTIES`: This directory contains various data files related to bulk crustal properties. Each file represents a specific type of data or method. The files in this directory are:
 
   - `av_dens_depth_function_T_DEPENDENT.dat`: average contintneal crustal density as a function of depth within the crust as calculated using [`SMV2rho`](https://github.com/sstephenson2/SMV2rho).  Nate the suffix `'T_DEPENDENT'` indicates that they were calculated using the temperature-dependent implementation of this approach.  Please see  [`SMV2rho`](https://github.com/sstephenson2/SMV2rho) and Stephenson _et al._ (2024) for more information.
   - `av_vp_depth_function_T_DEPENDENT.dat`: average contintneal crustal $V_P$ velocity as a function of depth within the crust
   - `av_vp_vs_rho_all_stephenson_T_DEPENDENT.dat`: location, crustal thickness and bulk velocity and density calculated using the temperature-dependent version of the Stephenson _et al._ density conversion.  Please see documentation in [`SMV2rho`](https://github.com/sstephenson2/SMV2rho) and Stephenson _et al._ (2024) for more details.  Columns are:
-  
+
       | Column Name | Description |
       |-------------|-------------|
       | station     | Station identifier |
@@ -73,6 +79,8 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
   - `bulk_rho_tc_function_T_DEPENDENT.dat`: Average bulk density as a function of crustal thickness as calculated using the temperature-dependent implementation of [`SMV2rho`](https://github.com/sstephenson2/SMV2rho).
   - `bulk_vp_tc_function_T_DEPENDENT.dat`: Average bulk $V_P$ velocity as a function of crustal thickness.
   - `bulk_vs_tc_function_T_DEPENDENT.dat`: Average bulk $V_S$ velocity as a function of crustal thickness.
+
+#### Referencing files
 
 - `REFERENCES`: This directory contains all references used to compile `SeisCruST`.  Please refer to this reference list for the primary source of any data that you choose to use in your work.  Original studies must be cited as a condition of use of this database.
   -  `SeisCruST_citations.bib`: list of references in BibTeX format.
