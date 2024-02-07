@@ -60,7 +60,7 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
         └── USGS_GSC
         ```
 
-  - `ARABIA/`, `EUROPE/`, `HUDSON_BAY/`, `IRAN/`, `N_AFRICA/`, `SE_ASIA/`, `S_AMERICA/`, `USGS_GSC/`, ... : Each of these directories represents a specific geographic region.  The `USGS_GSC` directory contains velocity profiles derived from the United States Geological Survey Global Seismic Catalog (USGS GSC) Inside each region directory, you will find:
+  - `ARABIA/`, `EUROPE/`, `HUDSON_BAY/`, `IRAN/`, `N_AFRICA/`, `SE_ASIA/`, `S_AMERICA/`, `USGS_GSC/`, ... : Each of these directories represents a specific geographic region.  The `USGS_GSC` directory contains velocity profiles derived from the [United States Geological Survey Global Seismic Catalog (USGS GSC)](https://www.sciencedirect.com/user/identity/landing?code=gVb1zwIlyYXH1CqzmMy-3PwqNNv6C82lYoFIDyD_&state=retryCounter%3D0%26csrfToken%3Dc63875c6-2118-4695-b0ab-24b90055f6ff%26idpPolicy%3Durn%253Acom%253Aelsevier%253Aidp%253Apolicy%253Aproduct%253Ainst_assoc%26returnUrl%3D%252Fscience%252Farticle%252Fpii%252FS0012825223001824%26prompt%3Dnone%26cid%3Darp-425d25a7-0f40-47e5-b898-a397d2975a6a) Inside each region directory, you will find:
 
     - `Vs`, `vs_rho_stephenson`, `vs_rho_stephenson_T_DEPENDENT`, `vs_rho_brocher`, `Vp`, `vp_rho_stephenson`, `vp_rho_brocher`, `vp_rho_stephenson_T_DEPENDENT`... : These files contain various data related to seismic velocities and converted densities.  Please see Stephenson et al. (2024) and [SMV2rho](https://github.com/sstephenson2/SMV2rho) for details on the methods used to convert to density.  Inside these directories you will find the method name of the seismic approach used to estimate the velocity structure.
 
