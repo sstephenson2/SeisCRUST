@@ -123,6 +123,12 @@ We do not include all data from the USGS GSC database and encourage users to exp
 
 Simply download the database!
 
+We recommend cloning the database using git
+
+```
+git clone https://github.com/sstephenson2/SeisCRUST.git $directory
+```
+
 We request that users reference this database and the primary authors of the studies whose data is used.
 Users are welcome to add to the database so long as the database and primary sources are referenced as well.  
 If you add to the database, we would reccommend that you consider contributing your data to the respository!  See ***Contributing*** below for more information.
