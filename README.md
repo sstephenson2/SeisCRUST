@@ -57,15 +57,26 @@ To contribute data, bug fixes or any other changes, plese see the ***Contributin
 
   - `av_dens_depth_function_T_DEPENDENT.dat`: average contintneal crustal density as a function of depth within the crust as calculated using [`SMV2rho`](https://github.com/sstephenson2/SMV2rho).  Nate the suffix `'T_DEPENDENT'` indicates that they were calculated using the temperature-dependent implementation of this approach.  Please see  [`SMV2rho`](https://github.com/sstephenson2/SMV2rho) and Stephenson _et al._ (2024) for more information.
   - `av_vp_depth_function_T_DEPENDENT.dat`: average contintneal crustal $V_P$ velocity as a function of depth within the crust
-  - `av_vp_vs_rho_all_stephenson_T_DEPENDENT.dat`: [Description of the file]
+  - `av_vp_vs_rho_all_stephenson_T_DEPENDENT.dat`: location, crustal thickness and bulk velocity and density calculated using the temperature-dependent version of the Stephenson _et al._ density conversion.  Please see documentation in [`SMV2rho`](https://github.com/sstephenson2/SMV2rho) and Stephenson _et al._ (2024) for more details.  Columns are:
+  
+      | Column Name | Description |
+      |-------------|-------------|
+      | station     | Station identifier |
+      | lon         | Longitude |
+      | lat         | Latitude |
+      | moho        | Depth of the Moho discontinuity |
+      | av_vp       | Average P-wave velocity |
+      | av_vs       | Average S-wave velocity |
+      | av_rho      | Average density |
+
   - `av_vs_depth_function_T_DEPENDENT.dat`: average contintneal crustal $V_S$ velocity as a function of depth within the crust
   - `bulk_rho_tc_function_T_DEPENDENT.dat`: Average bulk density as a function of crustal thickness as calculated using the temperature-dependent implementation of [`SMV2rho`](https://github.com/sstephenson2/SMV2rho).
   - `bulk_vp_tc_function_T_DEPENDENT.dat`: Average bulk $V_P$ velocity as a function of crustal thickness.
   - `bulk_vs_tc_function_T_DEPENDENT.dat`: Average bulk $V_S$ velocity as a function of crustal thickness.
 
-- `REFERENCES`: This directory contains all references used to compile `SeisCruST`.  please refer to this reference list for the full citation for any studies that you choose to use in your work.  Original studies must be cited as a condition of use of this database.
-  -  `SeisCruST_citations.bib`: list of references in bibtex format.
-  -  `SeisCruST_citations.md`: lith of citations in markdown.
+- `REFERENCES`: This directory contains all references used to compile `SeisCruST`.  Please refer to this reference list for the primary source of any data that you choose to use in your work.  Original studies must be cited as a condition of use of this database.
+  -  `SeisCruST_citations.bib`: list of references in BibTeX format.
+  -  `SeisCruST_citations.md`: list of citations in markdown.
 
 ## Data Sources
 
