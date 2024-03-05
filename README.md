@@ -162,4 +162,4 @@ We will take a look at your pull request as soon as we can!
 
 ## License
 
-This project is licensed under a CC-BY Creative Commons licence.
+This project is licensed under an MIT license.
